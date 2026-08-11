@@ -6,31 +6,29 @@ body {
     margin: 0;
     padding: 20px;
     font-family: sans-serif;
-    background-color: #f4f4f4; /* Cor de fundo opcional para testar se o CSS carregou */
+    background-color: #f4f4f4;
 }
 
-/* Deixamos apenas UMA regra para a galeria, usando o Grid em 2 colunas */
 .galeria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    max-width: 630px; /* Largura ideal para duas fotos de 300px + espaçamento */
-    margin: 20px auto 0 auto; /* Centraliza a galeria na tela */
+    max-width: 630px;
+    margin: 20px auto 0 auto;
 }
 
-/* Força as imagens a respeitarem o tamanho das colunas do Grid */
 .galeria img {
     width: 100% !important;
     height: auto !important;
     border-radius: 8px;
-    object-fit: cover; /* Evita que as fotos fiquem esticadas ou distorcidas */
+    object-fit: cover;
 }
 
-/* Limita a largura do texto para não ficar espalhado na tela inteira */
 section {
     max-width: 600px;
     margin-bottom: 20px;
-} 
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -39,24 +37,20 @@ body {
     margin: 0;
     padding: 20px;
     font-family: sans-serif;
-    background-color: #1a1a1a; /* Exemplo: Fundo Escuro */
-    
-    color: #83cfec; /* COR DO TEXTO GERAL (Parágrafos ganham essa cor cinza clara) */
+    background-color: #1a1a1a;
+    color: #83cfec;
 }
 
-/* Mudar a cor especificamente dos títulos principais */
 h1, h2 {
-    color: #ecf0f1; /* Títulos em Branco puro para dar destaque */
+    color: #ecf0f1;
 }
 
-/* Mudar a cor do link da Amazon */
 a {
-    color: #ff9900; /* Cor laranja (combina com a Amazon) */
-    text-decoration: none; /* Opcional: remove o sublinhado padrão do link */
+    color: #ff9900;
+    text-decoration: none;
     font-weight: bold;
 }
 
-/* Mudar a cor do link quando você passa o mouse por cima */
 a:hover {
     color: #ffb366;
     text-decoration: underline;
